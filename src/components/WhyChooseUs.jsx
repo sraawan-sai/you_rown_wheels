@@ -1,21 +1,25 @@
-import { Shield, UserCheck, Clock, Car } from 'lucide-react'
+import { Building2, Clock, ShieldCheck, BadgeDollarSign, Headphones } from 'lucide-react'
 
 const features = [
   {
-    icon: Shield,
-    title: 'Safe & Reliable Services',
-  },
-  {
-    icon: UserCheck,
-    title: 'Professional Drivers',
+    icon: Building2,
+    title: 'Professionally Managed Operations',
   },
   {
     icon: Clock,
-    title: 'On-Time, Every Time',
+    title: 'Punctual and Reliable Service Delivery',
   },
   {
-    icon: Car,
-    title: 'Comfortable & Clean Vehicles',
+    icon: ShieldCheck,
+    title: 'Verified Drivers and Well-Maintained Fleet',
+  },
+  {
+    icon: BadgeDollarSign,
+    title: 'Transparent Pricing Structure',
+  },
+  {
+    icon: Headphones,
+    title: 'Dedicated Client Support',
   },
 ]
 
@@ -27,7 +31,7 @@ export default function WhyChooseUs() {
           Why Choose Us
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {features.map((feature) => (
             <div
               key={feature.title}

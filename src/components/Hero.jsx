@@ -12,16 +12,13 @@ export default function Hero() {
               Your Own Wheels
             </h1>
             <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-teal-600">
-              Transport Solutions
+              Seamless Transport. Professional Experience.
             </h2>
-            <p className="mt-4 text-lg font-semibold text-gray-900">
-              Your Professional Journey Partner
+            <p className="mt-6 text-lg text-gray-600 max-w-2xl">
+              At Your Own Wheels, we deliver dependable and efficient mobility solutions tailored for businesses and individuals who value punctuality, safety, and professionalism.
             </p>
-            <p className="mt-4 text-gray-600 max-w-lg">
-              We provide tailored, professional transport solutions for airport transfers, corporate travel, daily commutes, and special events.
-            </p>
-            <p className="mt-4 text-gray-900 font-semibold">
-              Reliable. Safe. Comfortable. Every Time.
+            <p className="mt-4 text-gray-600 max-w-2xl">
+              From corporate travel to customized transport requirements, we ensure every journey is managed with precision and care.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -30,7 +27,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white font-medium px-6 py-3 rounded-md transition-colors"
               >
                 <Calendar size={18} />
-                Book a Ride
+                Request a Service
               </Link>
               <Link
                 to="/contact"

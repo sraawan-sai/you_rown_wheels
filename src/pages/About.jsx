@@ -11,7 +11,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Who We Are
@@ -20,18 +20,50 @@ export default function About() {
               Your Own Wheels is a professional transport solutions provider with over 20 years of expertise in operations and automation. We specialize in airport transfers, corporate travel, daily commutes, events, and outstation trips.
             </p>
             <p className="text-gray-600">
-              Our mission is to make every journey reliable, safe, comfortable, and on time. We combine experienced drivers, well-maintained vehicles, and 24/7 support to deliver a seamless travel experience.
+              We combine experienced drivers, well-maintained vehicles, and 24/7 support to deliver a seamless travel experience.
             </p>
           </div>
           <div className="bg-teal-50 rounded-lg p-8">
             <h3 className="text-xl font-bold text-teal-800 mb-4">Our Values</h3>
             <ul className="space-y-3 text-gray-700">
-              <li><strong>Safety First</strong> — Every trip is monitored and every vehicle is maintained to the highest standards.</li>
-              <li><strong>Reliability</strong> — Punctual pickups and dependable service, every time.</li>
-              <li><strong>Customer Focus</strong> — Tailored solutions designed around your schedule and comfort.</li>
-              <li><strong>Innovation</strong> — Smart booking and route management powered by modern technology.</li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                Reliability and Accountability
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                Customer-Centric Approach
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                Operational Excellence
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                Transparency and Integrity
+              </li>
             </ul>
           </div>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-8 md:p-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Our Mission
+          </h2>
+          <ul className="grid md:grid-cols-3 gap-6 text-gray-700">
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+              To provide safe, structured, and dependable transportation services
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+              To support businesses with scalable mobility solutions
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+              To maintain high standards of service quality and professionalism
+            </li>
+          </ul>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function Navbar() {
               to="/book"
               className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors"
             >
-              Book a Ride
+              Request a Service
             </Link>
           </div>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors"
             >
-              Book a Ride
+              Request a Service
             </Link>
           </div>
         </div>

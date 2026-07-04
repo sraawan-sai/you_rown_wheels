@@ -73,6 +73,74 @@ export default function Services() {
             </div>
           ))}
         </div>
+
+        <div className="mt-24">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-sm font-semibold text-teal-700 uppercase tracking-wide mb-2">
+              Business Partnerships
+            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Partner with Us
+            </h3>
+            <p className="text-lg text-gray-600">
+              We collaborate with organizations to provide structured and scalable transport solutions that enhance operational efficiency.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-teal-50 rounded-lg p-8">
+              <h4 className="text-xl font-bold text-teal-800 mb-4">
+                Why Businesses Choose Us
+              </h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Consistent Service Standards
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Scalable Transport Solutions
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Professional Support Team
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Flexible Engagement Models
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">
+                Industries We Serve
+              </h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Corporate Offices
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  IT & Technology Companies
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Manufacturing Units
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Educational Institutions
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Hospitality & Events
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -10,7 +10,7 @@ export default function FooterCTA() {
               Your Destination, Our Priority.
             </h2>
             <p className="mt-2 text-teal-100">
-              Book your ride today and travel with confidence.
+              Request your service today and travel with confidence.
             </p>
           </div>
 
@@ -18,7 +18,7 @@ export default function FooterCTA() {
             to="/book"
             className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-teal-700 font-medium px-8 py-3 rounded-md transition-colors"
           >
-            Book Your Ride Today
+            Request a Service
           </Link>
         </div>
       </div>
