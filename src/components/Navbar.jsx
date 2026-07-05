@@ -5,7 +5,7 @@ import logo from '../../images/logo.png'
 
 const Logo = () => (
   <Link to="/" className="flex items-center">
-    <img src={logo} alt="Your Own Wheels" className="h-20 w-auto max-w-[220px] object-contain" />
+    <img src={logo} alt="Your Own Wheels" className="h-24 w-auto max-w-[260px] object-contain" />
   </Link>
 )
 

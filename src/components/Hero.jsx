@@ -11,7 +11,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
               Your Own Wheels
             </h1>
-            <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-teal-600">
+            <h2 className="mt-2 text-2xl md:text-4xl lg:text-2xl font-bold text-teal-600">
               Seamless Transport. Professional Experience.
             </h2>
             <p className="mt-6 text-lg text-gray-600 max-w-2xl">
