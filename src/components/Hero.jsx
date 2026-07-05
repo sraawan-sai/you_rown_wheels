@@ -52,7 +52,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative z-30 h-80 md:h-96 lg:h-auto lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 -mx-6 lg:mx-0">
+          <div className="relative z-30 h-80 md:h-96 lg:h-auto lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 -mx-6 lg:mx-0 overflow-hidden">
             <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#f8f8f7] via-[#f8f8f7]/80 to-transparent z-10" />
             {carouselImages.map((src, index) => (
               <img
