@@ -1,19 +1,19 @@
 import { Plane, Building2, Bus, Users, Briefcase, Shield, Clock, Car, UserCheck } from 'lucide-react'
 
 const allServices = [
+    {
+    icon: Building2,
+    title: 'Corporate Travel',
+    description: 'Reliable employee transport and executive travel solutions tailored to your business schedule.',
+  },
   {
     icon: Plane,
     title: 'Airport Transfers',
     description: 'On-time pickups and drop-offs to all major airports with flight tracking and luggage assistance.',
   },
   {
-    icon: Building2,
-    title: 'Corporate Travel',
-    description: 'Reliable employee transport and executive travel solutions tailored to your business schedule.',
-  },
-  {
     icon: Bus,
-    title: 'Daily Commutes',
+    title: 'Daily Commutes / Shuttle Services',
     description: 'Comfortable and punctual daily transport for professionals and groups on fixed routes.',
   },
   {
@@ -37,7 +37,7 @@ const highlights = [
 
 export default function Services() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-[#f8f8f7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -87,7 +87,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-teal-50 rounded-lg p-8">
               <h4 className="text-xl font-bold text-teal-800 mb-4">
                 Why Businesses Choose Us
@@ -108,6 +108,10 @@ export default function Services() {
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
                   Flexible Engagement Models
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Automation Services
                 </li>
               </ul>
             </div>
@@ -136,6 +140,38 @@ export default function Services() {
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
                   Hospitality & Events
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-teal-50 rounded-lg p-8">
+              <h4 className="text-xl font-bold text-teal-800 mb-4">
+                Extended Services
+              </h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Hotel
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Airport Transport
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Hospital
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Outstation Visit
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Residential Society
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                  Individual Travel Requirement
                 </li>
               </ul>
             </div>

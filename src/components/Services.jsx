@@ -2,17 +2,17 @@ import { Plane, Building2, Bus, Users, Briefcase } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const services = [
+    {
+    icon: Building2,
+    title: 'Corporate Travel',
+  },
   {
     icon: Plane,
     title: 'Airport Transfers',
   },
   {
-    icon: Building2,
-    title: 'Corporate Travel',
-  },
-  {
     icon: Bus,
-    title: 'Daily Commutes',
+    title: 'Daily Commutes / Shuttle Services',
   },
   {
     icon: Users,

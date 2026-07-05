@@ -5,6 +5,7 @@ const promises = [
   'Punctual & Dependable',
   'Well-Maintained Fleet',
   'Customer Satisfaction',
+  'Cost Efficient',
   '24/7 Support',
 ]
 
@@ -15,9 +16,7 @@ export default function Experience() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Experience You
-              <br />
-              Can Trust
+              Experience You Can Trust
             </h2>
             <p className="mt-4 text-teal-200 font-semibold">
               Led by 20+ Years of Expertise in Operations & Automation Specialists

@@ -10,7 +10,7 @@ import BookRide from './pages/BookRide'
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen bg-[#f8f8f7] flex flex-col">
         <Navbar />
         <main className="flex-1">
           <Routes>

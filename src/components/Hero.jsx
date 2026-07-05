@@ -1,13 +1,26 @@
+import { useState, useEffect } from 'react'
 import { Calendar, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import heroImage from '../../images/hero.jpg'
+import image1 from '../../images/image1.png'
+import image2 from '../../images/image2.png'
+
+const carouselImages = [image1, image2]
 
 export default function Hero() {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % carouselImages.length)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-[#f8f8f7]">
       <div className="max-w-7xl mx-auto">
         <div className="z-30 grid lg:grid-cols-2 items-center min-h-[520px] md:min-h-[600px] lg:min-h-[700px]">
-          <div className="relative z-40 px-6 lg:px-8 py-12 md:py-16 lg:py-24">
+          <div className="relative z-40 px-6 lg:px-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
               Your Own Wheels
             </h1>
@@ -40,12 +53,16 @@ export default function Hero() {
           </div>
 
           <div className="relative z-30 h-80 md:h-96 lg:h-auto lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 -mx-6 lg:mx-0">
-            <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
-            <img
-              src={heroImage}
-              alt="Professional van transport"
-              className="w-full h-full object-cover object-center"
-            />
+            <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#f8f8f7] via-[#f8f8f7]/80 to-transparent z-10" />
+            {carouselImages.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Transport service ${index + 1}`}
+                className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out"
+                style={{ opacity: index === current ? 1 : 0 }}
+              />
+            ))}
           </div>
         </div>
       </div>

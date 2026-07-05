@@ -12,7 +12,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-[#f8f8f7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -58,49 +58,49 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Availability</h3>
-                <p className="text-gray-600">24 hours a day, 7 days a week</p>
+                <p className="text-gray-600">24 / 7</p>
               </div>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="bg-gray-50 rounded-lg p-6 md:p-8 space-y-5">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label className="block text-base font-bold text-teal-700 mb-1">Name</label>
               <input
                 type="text"
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none"
+                className="w-full rounded-md border border-gray-300 px-4 py-2.5 text-base focus:border-teal-500 focus:ring-teal-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label className="block text-base font-bold text-teal-700 mb-1">Email</label>
               <input
                 type="email"
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none"
+                className="w-full rounded-md border border-gray-300 px-4 py-2.5 text-base focus:border-teal-500 focus:ring-teal-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+              <label className="block text-base font-bold text-teal-700 mb-1">Phone</label>
               <input
                 type="tel"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none"
+                className="w-full rounded-md border border-gray-300 px-4 py-2.5 text-base focus:border-teal-500 focus:ring-teal-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label className="block text-base font-bold text-teal-700 mb-1">Message</label>
               <textarea
                 rows={4}
                 required
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none"
+                className="w-full rounded-md border border-gray-300 px-4 py-2.5 text-base focus:border-teal-500 focus:ring-teal-500 outline-none"
               />
             </div>
             <button

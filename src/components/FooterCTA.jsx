@@ -10,7 +10,7 @@ export default function FooterCTA() {
               Your Destination, Our Priority.
             </h2>
             <p className="mt-2 text-teal-100">
-              Request your service today and travel with confidence.
+              We Request your service today and travel with confidence.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-[#f8f8f7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -11,8 +11,8 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="md:col-span-2 mb-4">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Who We Are
             </h2>
@@ -23,8 +23,31 @@ export default function About() {
               We combine experienced drivers, well-maintained vehicles, and 24/7 support to deliver a seamless travel experience.
             </p>
           </div>
+
+          <div className="bg-gray-50 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Our Mission
+            </h2>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                To provide safe, structured, and dependable transportation services
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                To support businesses with scalable mobility solutions
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
+                To maintain high standards of service quality and professionalism
+              </li>
+            </ul>
+          </div>
+
           <div className="bg-teal-50 rounded-lg p-8">
-            <h3 className="text-xl font-bold text-teal-800 mb-4">Our Values</h3>
+            <h2 className="text-2xl font-bold text-teal-800 mb-6">
+              Our Values
+            </h2>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
@@ -44,26 +67,6 @@ export default function About() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="bg-gray-50 rounded-lg p-8 md:p-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Our Mission
-          </h2>
-          <ul className="grid md:grid-cols-3 gap-6 text-gray-700">
-            <li className="flex items-start gap-3">
-              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
-              To provide safe, structured, and dependable transportation services
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
-              To support businesses with scalable mobility solutions
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-2 h-2 mt-2 rounded-full bg-teal-700 flex-shrink-0" />
-              To maintain high standards of service quality and professionalism
-            </li>
-          </ul>
         </div>
       </div>
     </section>

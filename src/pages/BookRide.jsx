@@ -1,11 +1,22 @@
 import { useState } from 'react'
 
 const tripTypes = [
-  'Airport Transfer',
   'Corporate Travel',
+  'Airport Transfer',
   'Daily Commute',
   'Event / Special Occasion',
   'Outstation Trip',
+]
+
+const carTypes = [
+  'Sedan',
+  'SUV',
+  'Luxury',
+  'Bus',
+]
+
+const cities = [
+  'Hyderabad',
 ]
 
 export default function BookRide() {
@@ -18,7 +29,9 @@ export default function BookRide() {
     date: '',
     time: '',
     passengers: '1',
-    tripType: 'Airport Transfer',
+    tripType: 'Corporate Travel',
+    carType: 'Sedan',
+    city: 'Hyderabad',
     notes: '',
   })
   const [submitted, setSubmitted] = useState(false)
@@ -32,7 +45,7 @@ export default function BookRide() {
   const update = (field, value) => setForm({ ...form, [field]: value })
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-[#f8f8f7]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -109,6 +122,33 @@ export default function BookRide() {
                 onChange={(e) => update('dropoff', e.target.value)}
                 className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none"
               />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Car Type</label>
+              <select
+                value={form.carType}
+                onChange={(e) => update('carType', e.target.value)}
+                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none bg-white"
+              >
+                {carTypes.map((type) => (
+                  <option key={type} value={type}>{type}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">City</label>
+              <select
+                value={form.city}
+                onChange={(e) => update('city', e.target.value)}
+                className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-teal-500 focus:ring-teal-500 outline-none bg-white"
+              >
+                {cities.map((city) => (
+                  <option key={city} value={city}>{city}</option>
+                ))}
+              </select>
             </div>
           </div>
 

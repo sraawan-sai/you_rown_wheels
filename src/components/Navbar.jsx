@@ -5,7 +5,7 @@ import logo from '../../images/logo.png'
 
 const Logo = () => (
   <Link to="/" className="flex items-center">
-    <img src={logo} alt="Your Own Wheels" className="h-24 w-auto max-w-[260px] object-contain" />
+    <img src={logo} alt="Your Own Wheels" className="h-32 w-auto max-w-[300px] object-contain" />
   </Link>
 )
 
@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-36">
           <Logo />
 
           <div className="hidden md:flex items-center gap-8">
@@ -30,7 +30,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 to={link.to}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-lg font-medium transition-colors ${
                   link.to === '/' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'
                 }`}
               >
@@ -42,7 +42,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Link
               to="/book"
-              className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors"
+              className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-lg font-medium px-5 py-2.5 rounded-md transition-colors"
             >
               Request a Service
             </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 key={link.label}
                 to={link.to}
                 onClick={() => setIsOpen(false)}
-                className="block text-sm font-medium text-gray-700 hover:text-teal-700"
+                className="block text-lg font-medium text-gray-700 hover:text-teal-700"
               >
                 {link.label}
               </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
             <Link
               to="/book"
               onClick={() => setIsOpen(false)}
-              className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors"
+              className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white text-lg font-medium px-5 py-2.5 rounded-md transition-colors"
             >
               Request a Service
             </Link>
