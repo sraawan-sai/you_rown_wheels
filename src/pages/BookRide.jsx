@@ -35,11 +35,51 @@ export default function BookRide() {
     notes: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
+
+    try {
+      const response = await fetch('/api/send-booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setShowModal(true)
+      } else {
+        console.error('Email failed:', result)
+        alert('Failed to send booking email. Please try again.')
+      }
+    } catch (error) {
+      console.error('Request error:', error)
+      alert('Failed to send booking email. Please try again.')
+    } finally {
+      setSubmitted(false)
+    }
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+    setForm({
+      name: '',
+      phone: '',
+      email: '',
+      pickup: '',
+      dropoff: '',
+      date: '',
+      time: '',
+      passengers: '1',
+      tripType: 'Corporate Travel',
+      carType: 'Sedan',
+      city: 'Hyderabad',
+      notes: '',
+    })
   }
 
   const update = (field, value) => setForm({ ...form, [field]: value })
@@ -208,6 +248,28 @@ export default function BookRide() {
             </p>
           )}
         </form>
+
+        {showModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
+            <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center">
+              <div className="w-14 h-14 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Booking Saved</h3>
+              <p className="text-gray-600 mb-6">
+                Your booking request has been saved. An email with your booking details has been sent.
+              </p>
+              <button
+                onClick={closeModal}
+                className="w-full bg-teal-700 hover:bg-teal-800 text-white font-medium py-2.5 rounded-md transition-colors"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )
