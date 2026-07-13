@@ -40,7 +40,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Email</h3>
-                <p className="text-gray-600">support@yourownwheels.com</p>
+                <p className="text-gray-600">sales@yourownwheels.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -49,7 +49,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Office</h3>
-                <p className="text-gray-600">123 Transport Lane, Suite 400<br />City, State 00000</p>
+                <p className="text-gray-600">Hyderabad, Telangana</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
