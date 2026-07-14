@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import logo from '../../images/logo.png'
 
 const Logo = () => (
-  <Link to="/" className="flex items-center">
-    <img src={logo} alt="Your Own Wheels" className="h-32 w-auto max-w-[300px] object-contain" />
+  <Link to="/" className="flex items-center mt-4">
+    <img src={logo} alt="Your Own Wheels" className="h-40 w-auto max-w-[360px] object-contain" />
   </Link>
 )
 
