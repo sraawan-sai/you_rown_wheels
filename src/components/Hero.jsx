@@ -33,6 +33,9 @@ export default function Hero() {
             <p className="mt-4 text-gray-600 max-w-2xl">
               From corporate travel to customized transport requirements, we ensure every journey is managed with precision and care.
             </p>
+            <p className="mt-2 text-teal-700 font-medium max-w-2xl">
+              Currently serving in Hyderabad, India
+            </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
