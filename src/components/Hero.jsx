@@ -34,7 +34,7 @@ export default function Hero() {
               From corporate travel to customized transport requirements, we ensure every journey is managed with precision and care.
             </p>
 
-            <p className="mt-2 text-teal-700 font-medium max-w-2xl">
+            <p className="mt-6 text-teal-700 font-bold max-w-2xl">
               Currently serving in Hyderabad, India
             </p>
 
